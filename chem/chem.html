@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <link rel="stylesheet" href="../chemDoodle/install/ChemDoodleWeb.css" type="text/css" />
+  <link rel="stylesheet" href="../ChemDoodle/install/uis/jquery-ui-1.11.4.css" type="text/css" />
+  <script type="text/javascript" src="../chemDoodle/install/ChemDoodleWeb.js"></script>
+  <script type="text/javascript" src="../ChemDoodle/install/uis/ChemDoodleWeb-uis.js"></script>
+  <link rel="stylesheet" href="chem.css" type="text/css"/>
+  <title>ChemDoodle Sketcher</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="drawing_canvas_container">
+      <canvas id="drawing_canvas"></canvas>
+    </div>
+
+    <div class="input_size">
+      <div class="input_width">
+        <label for="width_input_box" id="label_width_input_box">width: </label>
+        <input type="number" class="input_value" id="width_input_box" name="width" max="500" min="100" step="5">
+      </div>
+
+      <div class="input_height">
+        <label for="height_input_box" id="label_height_input_box">Height: </label>
+        <input type="number"  class="input_value" id="height_input_box" name="height" max="500" min="100" step="5">
+      </div>
+    </div>
+
+    <div class="button_container">
+      <button id="resize" onclick="functionResize()">Resize</button>
+      <button id="actionbutton">Insert</button>
+    </div>
+
+    <div class="veiw_canvas_container">
+      <canvas id="veiw_canvas"></canvas>
+    </div>
+
+
+  </div>
+  <script src="chem.js"></script>
+</body>
+
+</html>
